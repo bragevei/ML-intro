@@ -1,7 +1,7 @@
 import numpy as np
 
 class LinearRegression():
-    def __init__(self, learning_rate=0.0001, epochs=1000):
+    def __init__(self, learning_rate=0.0001, epochs=100):
         self.learning_rate=learning_rate
         self.epochs=epochs
         self.loss=[]
