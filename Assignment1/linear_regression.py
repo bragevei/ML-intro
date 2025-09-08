@@ -10,7 +10,7 @@ class LinearRegression():
     def fit(self, X, y):
         n=X.shape[0]
         self.weights=np.zeros(X.shape[1]) 
-        self.bias=4.2
+        self.bias=4.2 #Lar bias være tilnærmet 4 da dette gir en mer nøyaktig kryssing av y-aksen 
         for i in range(self.epochs):
             y_pred=np.dot(X, self.weights)+self.bias #Lineær regresjonsmodell
             losses=np.mean((y-y_pred)**2) #Mean squared error
